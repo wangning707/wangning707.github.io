@@ -5,15 +5,20 @@
   
 
   
-  <title>Hexo</title>
+  <title>algorithm | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="算法(牛客)题目描述假设一个探险家被困在了地底的迷宫之中，要从当前位置开始找到一条通往迷宫出口的路径。迷宫可以用一个二维矩阵组成，有的部分是墙，有的部分是路。迷宫之中有的路上还有门，每扇门都在迷宫的某个地方有与之匹配的钥匙，只有先拿到钥匙才能打开门。请设计一个算法，帮助探险家找到脱困的最短路径。如前所述，迷宫是通过一个二维矩阵表示的，每个元素的值的含义如下 0-墙，1-路，2-探险家的起始位置，3">
+<meta name="keywords" content="algorithm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="algorithm">
+<meta property="og:url" content="http://yoursite.com/2019/03/25/algorithm01/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="算法(牛客)题目描述假设一个探险家被困在了地底的迷宫之中，要从当前位置开始找到一条通往迷宫出口的路径。迷宫可以用一个二维矩阵组成，有的部分是墙，有的部分是路。迷宫之中有的路上还有门，每扇门都在迷宫的某个地方有与之匹配的钥匙，只有先拿到钥匙才能打开门。请设计一个算法，帮助探险家找到脱困的最短路径。如前所述，迷宫是通过一个二维矩阵表示的，每个元素的值的含义如下 0-墙，1-路，2-探险家的起始位置，3">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-25T08:59:36.152Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="algorithm">
+<meta name="twitter:description" content="算法(牛客)题目描述假设一个探险家被困在了地底的迷宫之中，要从当前位置开始找到一条通往迷宫出口的路径。迷宫可以用一个二维矩阵组成，有的部分是墙，有的部分是路。迷宫之中有的路上还有门，每扇门都在迷宫的某个地方有与之匹配的钥匙，只有先拿到钥匙才能打开门。请设计一个算法，帮助探险家找到脱困的最短路径。如前所述，迷宫是通过一个二维矩阵表示的，每个元素的值的含义如下 0-墙，1-路，2-探险家的起始位置，3">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-algorithm01" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-algorithm01" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/25/algorithm01/" class="article-date">
   <time datetime="2019-03-25T08:50:32.000Z" itemprop="datePublished">2019-03-25</time>
@@ -75,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/25/algorithm01/">algorithm</a>
+    <h1 class="article-title" itemprop="name">
+      algorithm
     </h1>
   
 
@@ -108,54 +111,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-algorithm02" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/25/algorithm02/" class="article-date">
-  <time datetime="2019-03-25T07:25:31.000Z" itemprop="datePublished">2019-03-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/25/algorithm02/">算法(牛客)</a>
-    </h1>
+    <a href="/2019/03/25/algorithm02/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">算法(牛客)</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#算法(牛客)</p>
-<p>###题目描述<br>给定一个无序数组，包含正数、负数和0，要求从中找出3个数的乘积，使得乘积最大，要求时间复杂度：O(n)，空间复杂度：O(1)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> nums = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">-2</span>,<span class="number">-5</span>];</span><br><span class="line"><span class="keyword">var</span> nums1 = [];</span><br><span class="line"><span class="keyword">var</span> res = [];</span><br><span class="line"><span class="keyword">var</span> len = nums.length;</span><br><span class="line">nums.sort(<span class="function"><span class="keyword">function</span>(<span class="params">v1,v2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> v2-v1;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">res1 = nums[<span class="number">0</span>]*nums[<span class="number">1</span>]*nums[<span class="number">2</span>];</span><br><span class="line">res2 = nums[len]*nums[len<span class="number">-1</span>]*nums[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">if</span>(nums[len<span class="number">-1</span>]&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res1);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.max(res1,res2))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>有两个用字符串表示的非常大的大整数,算出他们的乘积，也是用字符串表示。不能用系统自带的大整数类型。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num1 = <span class="string">`72106547548473106236`</span>;</span><br><span class="line"><span class="keyword">let</span> num2 = <span class="string">`982161082972751393`</span>;</span><br><span class="line"><span class="built_in">console</span>.log(multipluy(num1,num2));</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">multipluy</span>(<span class="params">a, b</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> num1 = a.split(<span class="string">``</span>),num2 = b.split(<span class="string">``</span>);</span><br><span class="line">    <span class="keyword">let</span> res = <span class="keyword">new</span> <span class="built_in">Array</span>(num1.length+num2.length+<span class="number">5</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;res.length;i++)&#123;</span><br><span class="line">        res[i] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    num1.reverse();</span><br><span class="line">    num2.reverse();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;num1.length;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> j=<span class="number">0</span>;j&lt;num2.length;j++)&#123;</span><br><span class="line">            res[i+j] = <span class="built_in">parseInt</span>(res[i+j]);</span><br><span class="line">            res[i+j] += num1[i]*num2[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;res.length;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(res[i]/<span class="number">10</span>&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            res[i+<span class="number">1</span>] += <span class="built_in">Math</span>.floor(res[i]/<span class="number">10</span>);</span><br><span class="line">            res[i] = res[i]%<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    res.reverse();</span><br><span class="line">    <span class="built_in">console</span>.log(res.join(<span class="string">``</span>)+res.length);</span><br><span class="line">    <span class="keyword">let</span> index=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;res.length;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(res[i]!=<span class="number">0</span>)&#123;</span><br><span class="line">            index = i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    res = res.join(<span class="string">""</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(res+<span class="string">"   "</span>+index);</span><br><span class="line">    res = res.substring(index);</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>六一儿童节，老师带了很多好吃的巧克力到幼儿园。每块巧克力j的重量为w[j]，对于每个小朋友i，当他分到的巧克力大小达到h[i] (即w[j]&gt;=h[i])，他才会上去表演节目。老师的目标是将巧克力分发给孩子们，使得最多的小孩上台表演。可以保证每个w[i]&gt; 0且不能将多块巧克力分给一个孩子或将一块分给多个孩子。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> n=<span class="number">3</span>,m=<span class="number">2</span>,res=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> children=[<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> chocolate=[<span class="number">1</span>,<span class="number">3</span>];</span><br><span class="line">children.sort(<span class="function"><span class="keyword">function</span>(<span class="params">v1,v2</span>)</span>&#123;<span class="keyword">return</span> v2-v1&#125;);</span><br><span class="line">chocolate.sort(<span class="function"><span class="keyword">function</span>(<span class="params">v1,v2</span>)</span>&#123;<span class="keyword">return</span> v1-v2&#125;);</span><br><span class="line"><span class="comment">// for(let i of strH)&#123;</span></span><br><span class="line"><span class="comment">//     h.push(i);</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="comment">// for(let i of strW)&#123;</span></span><br><span class="line"><span class="comment">//     w.push(i);</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="built_in">console</span>.log(children);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;m;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> j=<span class="number">0</span>;j&lt;n;j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(chocolate[i]&gt;=children[j])&#123;</span><br><span class="line">            res++;</span><br><span class="line">            chocolate.splice(i,<span class="number">1</span>);</span><br><span class="line">            children.splice(j,<span class="number">1</span>);</span><br><span class="line">            i--;</span><br><span class="line">            j--;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/25/algorithm02/" data-id="cjto4fkub0001s4w2g472tltp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
