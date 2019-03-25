@@ -13,9 +13,9 @@
     
 
     
-        <meta name="description" content="#算法(牛客)
+        <meta name="description" content="##算法(牛客)
 ###题目描述给定一个无序数组，包含正数、负数和0，要求从中找出3个数的乘积，使得乘积最大，要求时间复杂度：O(n)，空间复杂度：O(1)
-123456789101112131415var nums = [3,4,1,2,-2,-5];var nums1 = [];var res =">
+123456789101112131415var nums = [3,4,1,2,-2,-5];var nums1 = [];var res ">
     
 
     <!--Author-->
@@ -30,9 +30,9 @@
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="#算法(牛客)
+        <meta property="og:description" content="##算法(牛客)
 ###题目描述给定一个无序数组，包含正数、负数和0，要求从中找出3个数的乘积，使得乘积最大，要求时间复杂度：O(n)，空间复杂度：O(1)
-123456789101112131415var nums = [3,4,1,2,-2,-5];var nums1 = [];var res =">
+123456789101112131415var nums = [3,4,1,2,-2,-5];var nums1 = [];var res ">
     
 
     <!--Open Graph Site Name-->
@@ -211,7 +211,7 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>#算法(牛客)</p>
+                <p>##算法(牛客)</p>
 <p>###题目描述<br>给定一个无序数组，包含正数、负数和0，要求从中找出3个数的乘积，使得乘积最大，要求时间复杂度：O(n)，空间复杂度：O(1)</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> nums = [<span class="number">3</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">-2</span>,<span class="number">-5</span>];</span><br><span class="line"><span class="keyword">var</span> nums1 = [];</span><br><span class="line"><span class="keyword">var</span> res = [];</span><br><span class="line"><span class="keyword">var</span> len = nums.length;</span><br><span class="line">nums.sort(<span class="function"><span class="keyword">function</span>(<span class="params">v1,v2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> v2-v1;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">res1 = nums[<span class="number">0</span>]*nums[<span class="number">1</span>]*nums[<span class="number">2</span>];</span><br><span class="line">res2 = nums[len]*nums[len<span class="number">-1</span>]*nums[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">if</span>(nums[len<span class="number">-1</span>]&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res1);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="built_in">Math</span>.max(res1,res2))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>有两个用字符串表示的非常大的大整数,算出他们的乘积，也是用字符串表示。不能用系统自带的大整数类型。</p>
