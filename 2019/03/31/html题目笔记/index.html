@@ -13,6 +13,8 @@
     
 
     
+        <meta name="description" content="###文档类型DTD（文档类型定义）是一组机器可读的规则，他们定义 XML 或 HTML 的特定版本中允许有什么，不允许有什么。浏览器通过分析页面的 DOCTYPE 声明来了解要使用哪个 DTD ，由此知道要使用 HTML 的哪个版本。DOCTYPE 当前有两种风格，严格（ strict ）和过渡（">
+    
 
     <!--Author-->
     
@@ -21,10 +23,12 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Hexo">
+        <meta property="og:title" content="html题目笔记">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="###文档类型DTD（文档类型定义）是一组机器可读的规则，他们定义 XML 或 HTML 的特定版本中允许有什么，不允许有什么。浏览器通过分析页面的 DOCTYPE 声明来了解要使用哪个 DTD ，由此知道要使用 HTML 的哪个版本。DOCTYPE 当前有两种风格，严格（ strict ）和过渡（">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +36,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>algorithm - Hexo</title>
+    <title>html题目笔记 - Hexo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -153,49 +157,60 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>#algorithm</h1>
+                <div class="post-heading">
+                    <h1>html题目笔记</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-31
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2019/03/25/algorithm01/">
-        <h1 class="post-title archive">
-            算法(牛客)
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-03-25
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>###文档类型<br>DTD（文档类型定义）是一组机器可读的规则，他们定义 XML 或 HTML 的特定版本中允许有什么，不允许有什么。浏览器通过分析页面的 DOCTYPE 声明来了解要使用哪个 DTD ，由此知道要使用 HTML 的哪个版本。<br>DOCTYPE 当前有两种风格，严格（ strict ）和过渡（ transitional ）。过渡 DOCTYPE 的目的是帮助开发人员从老版本迁移到新版本。<br>如果发送具有正确的 MIME 类型的 XHTML 文档，理解 XML 的浏览器将不显示无效的页面。<br>浏览器模式<br>    浏览器有两种呈现模式：标准模式和混杂模式（quirks mode）。在标准模式中，浏览器根据规范呈现页面；在混杂模式中，页面以一种比较宽松的向后兼容的方式显示。<br>DOCTYPE 切换<br>对于 HTML 4.01 文档，<br>包含严格 DTD 的 DOCTYPE 常常导致页面以标准模式呈现。<br>包含过度 DTD 和 URI 的 DOCTYPE 也导致页面以标准模式呈现。<br>但是有过度 DTD 而没有 URI 会导致页面以混杂模式呈现。<br>DOCTYPE 不存在或形式不正确会导致 HTML 和 XHTML 文档以混杂模式呈现。</p>
+<p>###Web worker<br>在JavaScript没有webworker的版本中，异步编程的实现全都是通过callback(回调函数)来实现的，他的主要思想是对已有的指令重新排序，并不是真正的多线程，有了web worker之后js才真正算是有了多线程，web worker与主进程通过onmessage和postmessage交互。</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr>

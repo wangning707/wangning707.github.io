@@ -13,6 +13,9 @@
     
 
     
+        <meta name="description" content="####字体em: 当前文本字体大小，默认16pxrem：规定当前屏幕宽度为20remrpx：规定当前屏幕宽度为750rpx
+####盒模型box-sizing：content-box (默认) 内容高度=元素高度 实际高度=height+border+padding        border-b">
+    
 
     <!--Author-->
     
@@ -21,10 +24,13 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Hexo">
+        <meta property="og:title" content="css笔记">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="####字体em: 当前文本字体大小，默认16pxrem：规定当前屏幕宽度为20remrpx：规定当前屏幕宽度为750rpx
+####盒模型box-sizing：content-box (默认) 内容高度=元素高度 实际高度=height+border+padding        border-b">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +38,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>algorithm - Hexo</title>
+    <title>css笔记 - Hexo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -153,49 +159,76 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>#algorithm</h1>
+                <div class="post-heading">
+                    <h1>css笔记</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-31
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2019/03/25/algorithm01/">
-        <h1 class="post-title archive">
-            算法(牛客)
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-03-25
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>####字体<br>em: 当前文本字体大小，默认16px<br>rem：规定当前屏幕宽度为20rem<br>rpx：规定当前屏幕宽度为750rpx</p>
+<p>####盒模型<br>box-sizing：content-box (默认) 内容高度=元素高度 实际高度=height+border+padding<br>        border-box 可设置内容高度+padding+border=元素高度</p>
+<p>####透明度<br>opacity：设置透明度 或者rgba设置透明度。</p>
+<p>####viewport<br>meta标签的viewport类别 content=”width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no”<br>width定义视口宽度，上文是设置宽度等于屏幕宽度<br>initial-scale初始放大倍数，maximum-scale 是用户最大缩放比例<br>minimum-scale是用户最小缩放比例<br>user-scalable 是否允许用户手动缩放</p>
+<p>####设置用户水平垂直居中<br>//table-cell方法<br>div{<br>    width: 260px;<br>    height: 230px;<br>    border: 3px solid #555;<br>    display: table-cell;     //作为表格单元显示<br>    vertical-align: middle;<br>    text-align: center;<br>}<br>//弹性盒子<br>.container{<br>      width: 300px;<br>      height: 200px;<br>      border: 3px solid #546461;<br>      display: -webkit-flex;<br>      display: flex;<br>      -webkit-align-items: center;<br>      align-items: center;          //垂直居中<br>      -webkit-justify-content: center;<br>      justify-content: center;     //水平居中<br> }</p>
+<p>display属性：</p>
+<p>####点透事件(移动端)<br>事件的触发时间按由早到晚排列为：touchstart 早于 touchend 早于 click。<br>亦即click的触发是有延迟的，这个时间大概在300ms左右。<br>由于我们在touchstart阶段就已经隐藏了罩层A，当click被触发时候，能够被点击的元<br>素则是其下的B元素，由于B绑定了click事件（或者B本身默认存在click事件），所以<br>B的click事件被触发，产生了点透的情况。</p>
+<p>A为遮罩层，设置了点击消失之类的事件，B在遮罩层下面且B本身有点击事件，就会发生点透事件。<br>阻止点透事件：<br>1、github上有一个fastclick可以完美解决<br>引入fastclick.js，因为fastclick源码不依赖其他库所以你可以在原生的js前直接加上<br>window.addEventListener( “load”, function() {<br>FastClick.attach( document.body );<br>}, false );<br>当然require的话就这样：<br>var FastClick = require(‘fastclick‘);<br>FastClick.attach(document.body, options);<br>2、preventDefault()，阻止事件默认触发<br>$(“#aa”).on(“touchend”, function (event) {<br>//很多处理比如隐藏什么的<br>event.preventDefault();<br>});<br>3、延迟处理事件<br>$(“#aa”).on(“tap”, function (event) {<br>setTimeout(function(){<br>//很多处理比如隐藏什么的<br>},320);<br>});</p>
+<p>####深拷贝<br>//递归实现深拷贝</p>
+<p>//通过js的内置对象JSON来进行数组对象的深拷贝</p>
+<p>function deepClone2(obj) {</p>
+<p>  var _obj = JSON.stringify(obj),<br>  //将JSON转化为字符串<br>  objClone = JSON.parse(_obj);<br>   //将字符串转化为json<br>  return objClone;</p>
+<p>}</p>
+<p>lodash函数库<br>lodash.cloneDeep()实现深拷贝</p>
+<p>object.assign()当对象只有一级属性为深拷贝，否则为浅拷贝。</p>
+<p>通过jQuery的extend方法实现深拷贝<br>var array = [1,2,3,4];<br>var newArray = $.extend(true,[],array);</p>
+<p>####常见的渲染内核<br>Trident(IE)<br>edge(edge)<br>Gecko(FirFox)<br>Presto(Opera已经废弃)<br>Webkit(Chrome Safari)<br>Bink(Opera)</p>
+<p>####Js引擎<br>Jscript(-ie9)<br>Chakra(IE9- &amp;&amp; edge)<br>monkey(firfox)<br>V8(chrome)</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr>

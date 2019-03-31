@@ -13,6 +13,8 @@
     
 
     
+        <meta name="description" content="JavaScript中instanceOf 用来判断对象是否属于某一个类，原理就是查找左变量的原型链是否存在右变量的原型12345678910111213141516171819202122function instance_of(L, R) &amp;#123;//L 表示左表达式，R 表示右表达式   ">
+    
 
     <!--Author-->
     
@@ -21,10 +23,12 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Hexo">
+        <meta property="og:title" content="js中instanceOf实现原理">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="JavaScript中instanceOf 用来判断对象是否属于某一个类，原理就是查找左变量的原型链是否存在右变量的原型12345678910111213141516171819202122function instance_of(L, R) &amp;#123;//L 表示左表达式，R 表示右表达式   ">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +36,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +55,7 @@
 
     <!-- Title -->
     
-    <title>algorithm - Hexo</title>
+    <title>js中instanceOf实现原理 - Hexo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -153,49 +157,59 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>#algorithm</h1>
+                <div class="post-heading">
+                    <h1>js中instanceOf实现原理</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-03-31
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2019/03/25/algorithm01/">
-        <h1 class="post-title archive">
-            算法(牛客)
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-03-25
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h3 id="JavaScript中instanceOf-用来判断对象是否属于某一个类，原理就是查找左变量的原型链是否存在右变量的原型"><a href="#JavaScript中instanceOf-用来判断对象是否属于某一个类，原理就是查找左变量的原型链是否存在右变量的原型" class="headerlink" title="JavaScript中instanceOf 用来判断对象是否属于某一个类，原理就是查找左变量的原型链是否存在右变量的原型"></a>JavaScript中instanceOf 用来判断对象是否属于某一个类，原理就是查找左变量的原型链是否存在右变量的原型</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">instance_of</span>(<span class="params">L, R</span>) </span>&#123;<span class="comment">//L 表示左表达式，R 表示右表达式 </span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> O = R.prototype;   <span class="comment">// 取 R 的显示原型 </span></span><br><span class="line"></span><br><span class="line">    L = L.__proto__;  <span class="comment">// 取 L 的隐式原型</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;    </span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (L === <span class="literal">null</span>)      </span><br><span class="line"></span><br><span class="line">             <span class="keyword">return</span> <span class="literal">false</span>;   </span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (O === L)  <span class="comment">// 当 O 显式原型 严格等于  L隐式原型 时，返回true</span></span><br><span class="line"></span><br><span class="line">             <span class="keyword">return</span> <span class="literal">true</span>;   </span><br><span class="line"></span><br><span class="line">        L = L.__proto__;  </span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//原文：http://www.cnblogs.com/mengfangui/p/10220906.html</span></span><br></pre></td></tr></table></figure>
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr>
