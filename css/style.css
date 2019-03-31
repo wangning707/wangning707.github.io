@@ -243,8 +243,8 @@ hr.small {
   color: #0085a1;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
+  font-size: 18px;
+  margin-top: 13px;
   margin-bottom: 10px;
 }
 .post-preview > a > .post-title.archive {
