@@ -189,6 +189,9 @@
 <p>//清空一个元素，即删除一个元素的所有子元素<br>function removeAllChild() {<br>    var div = document.getElementById(“div1”);<br>    while(div.hasChildNodes()) //当div下还存在子节点时 循环继续<br>    {<br>        div.removeChild(div.firstChild);<br>    }<br>}</p>
 <h3 id="网页支持的图片格式"><a href="#网页支持的图片格式" class="headerlink" title="网页支持的图片格式"></a>网页支持的图片格式</h3><p>当前网页支持的图片格式有jpg,gif,png,bmp<br>bmp不是很常见，虽然图片更清晰，但因为太大了，浪费带宽</p>
 <h3 id="isNull-isNAN"><a href="#isNull-isNAN" class="headerlink" title="isNull isNAN"></a>isNull isNAN</h3><p>只有这两个特殊变量用这两个特殊方法检测<br>其中NAN == NAN 返回false</p>
+<h3 id="206-304"><a href="#206-304" class="headerlink" title="206 304"></a>206 304</h3><p>206是断点续传的状态码，这涉及到了http1.1开始的分块传输，chunk<br>客户端在发起重传请求的同时头部中会包含Range属性<br>eg:Range: bytes 512000-;<br>服务器接收到断点请求从512K开始发送且在头部增加:<br>Content-Range:bytes 512000-/1024000  //从512K开始传，一共1024K<br>此时返回206状态码<br>如果URL对应的文件内容在服务端发生变化，比如last-modified与if-modified-since不匹配<br>或者E-tag与If-Match不匹配(优先级更高)，服务器会重新发送这个数据包，并返回状态码200;</p>
+<p>304状态码表示缓存可以继续使用，这个状态码通常在客户端询问服务器是否许需要更新本地缓<br>存的时候使用，也是发送if-modified-since或者If-Match服务器会进行检测，如果数据没有<br>变动，即E-tag=if-match，则返回304，表示缓存可以继续使用，否则返回200，并发送新的数<br>据包;</p>
+<p>强缓存机制是通过expire和Catch-control来实现;</p>
 
 
                 
