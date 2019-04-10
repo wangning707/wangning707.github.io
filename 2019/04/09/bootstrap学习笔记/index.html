@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="#### bootstrap网格系统    基于.container类:必须在这个类中才能进行网格布局    网格系统是通过指定您想要横跨的十二个可用的列来创建的。    例如，要创建三个相等的列，则使用三个 .col-xs-4。
+&amp;apos;col-xs-6 col-sm-3&amp;apos;小屏幕占3">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="WangNing">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="bootstrap学习笔记">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="#### bootstrap网格系统    基于.container类:必须在这个类中才能进行网格布局    网格系统是通过指定您想要横跨的十二个可用的列来创建的。    例如，要创建三个相等的列，则使用三个 .col-xs-4。
+&amp;apos;col-xs-6 col-sm-3&amp;apos;小屏幕占3">
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Notes">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article">
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://yoursite.com/img/home-bg.jpg">
+    
+
+        <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    
+        <meta name="twitter:image" content="http://yoursite.com/img/home-bg.jpg">
+    
+
+    <!-- Title -->
+    
+    <title>bootstrap学习笔记 - Notes</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">前端学习笔记</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/wangning707">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>bootstrap学习笔记</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-04-09
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p><link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"><br>   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script><br>   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>#### bootstrap网格系统<br>    基于.container类:必须在这个类中才能进行网格布局<br>    网格系统是通过指定您想要横跨的十二个可用的列来创建的。<br>    例如，要创建三个相等的列，则使用三个 .col-xs-4。</p>
+<pre><code>&apos;col-xs-6 col-sm-3&apos;小屏幕占3格。超小屏幕占6格
+</code></pre><div class="container" style="padding: 40px;"><br>    <div class="row visible-on"><br>        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"><br>            <span class="hidden-xs">特别小型</span><br>            <span class="visible-xs">✔ 在特别小型设备上可见</span><br>        </div><br>        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"><br>            <span class="hidden-sm">小型</span><br>            <span class="visible-sm">✔ 在小型设备上可见</span><br>        </div><br>        <div class="clearfix visible-xs"></div><br>        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"><br>            <span class="hidden-md">中型</span><br>            <span class="visible-md">✔ 在中型设备上可见</span><br>        </div><br>        <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"><br>            <span class="hidden-lg">大型</span><br>            <span class="visible-lg">✔ 在大型设备上可见</span><br>        </div><br>    </div><br></div>
+
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span> <span class="attr">style</span>=<span class="string">"padding: 40px;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row visible-on"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xs-6 col-sm-3"</span> <span class="attr">style</span>=<span class="string">"background-color: #dedef8;</span></span></span><br><span class="line"><span class="tag"><span class="string">        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"hidden-xs"</span>&gt;</span>特别小型<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"visible-xs"</span>&gt;</span>✔ 在特别小型设备上可见<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xs-6 col-sm-3"</span> <span class="attr">style</span>=<span class="string">"background-color: #dedef8;</span></span></span><br><span class="line"><span class="tag"><span class="string">        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"hidden-sm"</span>&gt;</span>小型<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"visible-sm"</span>&gt;</span>✔ 在小型设备上可见<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"clearfix visible-xs"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xs-6 col-sm-3"</span> <span class="attr">style</span>=<span class="string">"background-color: #dedef8;</span></span></span><br><span class="line"><span class="tag"><span class="string">        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"hidden-md"</span>&gt;</span>中型<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"visible-md"</span>&gt;</span>✔ 在中型设备上可见<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xs-6 col-sm-3"</span> <span class="attr">style</span>=<span class="string">"background-color: #dedef8;</span></span></span><br><span class="line"><span class="tag"><span class="string">        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"hidden-lg"</span>&gt;</span>大型<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"visible-lg"</span>&gt;</span>✔ 在大型设备上可见<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code>col-md-offset-3 设置空白，这个类是设置这个容器左边3个空白列
+
+网格布局可以嵌套，和普通布局一样
+
+col-md-push-*向右推*个格子 *为1-11
+col-md-pull-*向左拉*个格子
+</code></pre><h4 id="排版-副标题"><a href="#排版-副标题" class="headerlink" title="排版 副标题"></a>排版 <small>副标题</small></h4><pre><code>标题由\&lt;h1&gt;-\&lt;h6&gt;
+用small标签创建副标题
+&lt;h4&gt;标题&lt;small&gt;副标题&lt;/small&gt;&lt;/h4&gt;
+或者加上class=&quot;small&quot;
+class=&quot;lead&quot;会使一个文本加粗，加大行高
+</code></pre><p><small>本行内容是在标签内</small><br><br><strong>本行内容是在标签内</strong><br><br><em>本行内容是在标签内，并呈现为斜体</em><br></p>
+<p class="text-left">向左对齐文本</p><br><p class="text-center">居中对齐文本</p><br><p class="text-right">向右对齐文本</p><br><p class="text-muted">本行内容是减弱的</p><br><p class="text-primary">本行内容带有一个 primary class</p><br><p class="text-success">本行内容带有一个 success class</p><br><p class="text-info">本行内容带有一个 info class</p><br><p class="text-warning">本行内容带有一个 warning class</p><br><p class="text-danger">本行内容带有一个 danger class</p>
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">small</span>&gt;</span>本行内容是在标签内<span class="tag">&lt;/<span class="name">small</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>本行内容是在标签内<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>本行内容是在标签内，并呈现为斜体<span class="tag">&lt;/<span class="name">em</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-left"</span>&gt;</span>向左对齐文本<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-center"</span>&gt;</span>居中对齐文本<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-right"</span>&gt;</span>向右对齐文本<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-muted"</span>&gt;</span>本行内容是减弱的<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-primary"</span>&gt;</span>本行内容带有一个 primary class<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-success"</span>&gt;</span>本行内容带有一个 success class<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-info"</span>&gt;</span>本行内容带有一个 info class<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-warning"</span>&gt;</span>本行内容带有一个 warning class<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"text-danger"</span>&gt;</span>本行内容带有一个 danger class<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- .text-muted：提示，使用浅灰色（#999）</span></span><br><span class="line"><span class="comment">.text-primary：主要，使用蓝色（#428bca）</span></span><br><span class="line"><span class="comment">.text-success：成功，使用浅绿色(#3c763d)</span></span><br><span class="line"><span class="comment">.text-info：通知信息，使用浅蓝色（#31708f）</span></span><br><span class="line"><span class="comment">.text-warning：警告，使用黄色（#8a6d3b）</span></span><br><span class="line"><span class="comment">.text-danger：危险，使用褐色（#a94442） --&gt;</span></span><br></pre></td></tr></table></figure>
+<p></p><h4>未定义样式列表</h4><p></p>
+<p><ul class="list-unstyled"><br>  <li>Item 1</li><br>  <li>Item 2</li><br>  <li>Item 3</li><br>  <li>Item 4</li><br></ul></p>
+<p></p><h4>内联列表</h4><p></p>
+<p><ul class="list-inline"><br>  <li>Item 1</li><br>  <li>Item 2</li><br>  <li>Item 3</li><br>  <li>Item 4</li><br></ul></p>
+<p></p><h4>定义列表</h4><p></p>
+<dl><br>  <dt>Description 1</dt><br>  <dd>Item 1</dd><br>  <dt>Description 2</dt><br>  <dd>Item 2</dd><br></dl><br><h4>水平的定义列表</h4><br><dl class="dl-horizontal"><br>  <dt>Description 1</dt><br>  <dd>Item 1</dd><br>  <dt>Description 2</dt><br>  <dd>Item 2</dd><br></dl>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>未定义样式列表<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"list-unstyled"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>内联列表<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"list-inline"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Item 4<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>定义列表<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Description 1<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Item 1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Description 2<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Item 2<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>水平的定义列表<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dl</span> <span class="attr">class</span>=<span class="string">"dl-horizontal"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Description 1<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Item 1<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Description 2<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>Item 2<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p></p><p><code>&lt;header&gt;</code> 作为内联元素被包围。</p><p></p>
+<p></p><p>如果需要把代码显示为一个独立的块元素，请使用 &lt;pre&gt; 标签：</p><p></p>
+<pre>
+&lt;article&gt;
+    &lt;h1&gt;Article Heading&lt;/h1&gt;
+&lt;/article&gt;
+</pre>
+
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><pre><code>table样式有
+.table 基本样式 必须要有
+.table-striped 在\&lt;tbody&gt;内添加斑马线样式的条纹，一格灰一格白
+.table-bordered    为所有表格的单元格添加边框    
+.table-hover 在\&lt;tbody&gt; 内的任一行启用鼠标悬停状态
+.table-condensed 让表格更加紧凑
+</code></pre><div class="container"><br>    <h2>表格</h2><br>    <p><br>    如果您想要一个只带有内边距（padding）和水平分割的基本表.table 为任意表格添加基本样式 (只有横向分隔线):</p><br>    <table class="table"><br>        <thead><br>            <tr><br>                <th>#</th><br>                <th>Firstname</th><br>            </tr><br>        </thead><br>        <tbody><br>            <tr><br>                <td>1</td><br>                <td>Anna</td><br>            </tr><br>            <tr><br>                <td>2</td><br>                <td>Debbie</td><br>            </tr><br>            <tr><br>                <td>3</td><br>                <td>John</td><br>            </tr><br>        </tbody><br>    </table><br></div>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h2</span>&gt;</span>表格<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span> .table 为任意表格添加基本样式 (只有横向分隔线):<span class="tag">&lt;/<span class="name">p</span>&gt;</span>            </span><br><span class="line">	<span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">"table table-striped table-bordered table-hover table-condensed"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">th</span>&gt;</span>#<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">th</span>&gt;</span>Firstname<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>Anna<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>Debbie<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">td</span>&gt;</span>John<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>\<tr>, \<th> 和 \</th><td> 类<br>.active    将悬停的颜色应用在行或者单元格上<br>.success 表示成功的操作<br>.info 表示信息变化的操作<br>.warning 表示一个警告的操作<br>.danger    表示一个危险的操作</td></tr></p>
+<p><a href="http://www.runoob.com/bootstrap/bootstrap-tables.html" target="_blank" rel="noopener">table教程点这里</a></p>
+<h4 id="bootstrap表单"><a href="#bootstrap表单" class="headerlink" title="bootstrap表单"></a>bootstrap表单</h4><p>Bootstrap 提供了下列类型的表单布局：</p>
+<p>1.垂直表单（默认）<br>将form元素中添加role=’form’<br>把标签和控件放在一个带有 class .form-group 的 \<div> 中。这是获取最佳间距所必需的。<br>向所有的文本元素 \<input>、\<textarea> 和 \</textarea><select> 添加 class =”form-control” </select></div></p>
+<form role="form"><br>    <div class="form-group"><br>        <label for="name">名称</label><br>        <input type="text" class="form-control" id="name" placeholder="请输入名称"><br>    </div><br>    <div class="form-group"><br>        <label for="inputfile">文件输入</label><br>        <input type="file" id="inputfile"><br>        <p class="help-block">这里是块级帮助文本的实例。</p><br>    </div><br>    <div class="checkbox"><br>        <label><br>        <input type="checkbox">请打勾<br>        </label><br>    </div><br>    <button type="submit" class="btn btn-default">提交</button><br></form>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">role</span>=<span class="string">"form"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"name"</span>&gt;</span>名称<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">id</span>=<span class="string">"name"</span> <span class="attr">placeholder</span>=<span class="string">"请输入名称"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"inputfile"</span>&gt;</span>文件输入<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">id</span>=<span class="string">"inputfile"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"help-block"</span>&gt;</span>这里是块级帮助文本的实例。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"checkbox"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span>&gt;</span>请打勾</span><br><span class="line">    <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn btn-default"</span>&gt;</span>提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>2.内联表单<br>如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向 <form> 标签添加 class .form-inline。</form></p>
+<form class="form-inline" role="form"><br><div class="form-group"><br><label class="sr-only" for="name">名称</label><br><input type="text" class="form-control" id="name" placeholder="请输入名称"><br></div><br><div class="form-group"><br><label class="sr-only" for="inputfile">文件输入</label><br><input type="file" id="inputfile"><br></div><br><div class="checkbox"><br><label><br>    <input type="checkbox">请打勾<br></label><br></div><br><button type="submit" class="btn btn-default">提交</button><br></form>
+
+<p>3.水平表单</p>
+<form class="form-horizontal" role="form"><br>  <div class="form-group"><br>    <label for="firstname" class="col-sm-2 control-label">名字</label><br>    <div class="col-sm-10"><br>      <input type="text" class="form-control" id="firstname" placeholder="请输入名字"><br>    </div><br>  </div><br>  <div class="form-group"><br>    <label for="lastname" class="col-sm-2 control-label">姓</label><br>    <div class="col-sm-10"><br>      <input type="text" class="form-control" id="lastname" placeholder="请输入姓"><br>    </div><br>  </div><br>  <div class="form-group"><br>    <div class="col-sm-offset-2 col-sm-10"><br>      <div class="checkbox"><br>        <label><br>          <input type="checkbox">请记住我<br>        </label><br>      </div><br>    </div><br>  </div><br>  <div class="form-group"><br>    <div class="col-sm-offset-2 col-sm-10"><br>      <button type="submit" class="btn btn-default">登录</button><br>    </div><br>  </div><br></form>
+
+<p>水平表单与其他表单不仅标记的数量上不同，而且表单的呈现形式也不同。如需创建一个水平布局的表单，请按下面的几个步骤进行：</p>
+<p>向父 \<form> 元素添加 class .form-horizontal。<br>把标签和控件放在一个带有 class .form-group 的 \<div> 中。<br>向标签添加 class .control-label。</div></form></p>
+<h4 id="支持的表单控件"><a href="#支持的表单控件" class="headerlink" title="支持的表单控件"></a>支持的表单控件</h4><p>1.输入框<br>type属性必须<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"name"</span>&gt;</span>标签<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">placeholder</span>=<span class="string">"文本输入"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>2.文本框（Textarea）<br>当您需要进行多行输入的时，则可以使用文本框 textarea。必要时可以改变 rows 属性（较少的行 = 较小的盒子，较多的行 = 较大的盒子）。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"name"</span>&gt;</span>文本框<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">rows</span>=<span class="string">"3"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>3.复选框和单选框<br>设置class=’checkbox’(default)<br>设置class=’checkbox-inline’(内联复选框)<br>radio也是一样</p>
+<p>4.选择列表<br>select标签<br>class=”form-control”</p>
+<p><label for="name">选择列表</label></p>
+<select class="form-control"><br>    <option>1</option><br>    <option>2</option><br>    <option>3</option><br>    <option>4</option><br>    <option>5</option><br></select>
+
+<p>5.静态控件，放置纯文本的控件</p>
+<form class="form-horizontal" role="form"><br>    <div class="form-group"><br>        <label class="col-sm-2 control-label">Email</label><br>        <div class="col-sm-10"><br>            <p class="form-control-static"><a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a></p><br>        </div><br>    </div><br>    <div class="form-group"><br>        <label for="inputPassword" class="col-sm-2 control-label">密码</label><br>        <div class="col-sm-10"><br>            <input type="password" class="form-control" id="inputPassword" placeholder="请输入密码"><br>        </div><br>    </div><br></form>
+
+
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/wangning707" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2019 WangNing<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
