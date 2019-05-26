@@ -13,6 +13,9 @@
     
 
     
+        <meta name="description" content="小程序边框border属性  border需要分开设置，一起设置的话有的手机不支持  border-style: dashed;  border-width: 1px;  border-color: green;
+  border-right-style: solid;  border-right-">
+    
 
     <!--Author-->
     
@@ -21,10 +24,13 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Notes">
+        <meta property="og:title" content="小程序学习笔记">
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="小程序边框border属性  border需要分开设置，一起设置的话有的手机不支持  border-style: dashed;  border-width: 1px;  border-color: green;
+  border-right-style: solid;  border-right-">
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +38,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -51,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>page - Archives - Notes</title>
+    <title>小程序学习笔记 - Notes</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -137,77 +143,79 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Archives</h1>
+                <div class="post-heading">
+                    <h1>小程序学习笔记</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2019-05-02
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/微信小程序/">#微信小程序</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
-                <div class="post-preview">
-    <a href="/2019/03/31/star/">
-        <h1 class="post-title archive">
-            star
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-03-31
-    </p>
-</div>
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2019/03/25/css01/">
-        <h1 class="post-title archive">
-            双飞翼布局&&圣杯布局
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-03-25
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h3 id="小程序边框border属性"><a href="#小程序边框border属性" class="headerlink" title="小程序边框border属性"></a>小程序边框border属性</h3><p>  border需要分开设置，一起设置的话有的手机不支持<br>  border-style: dashed;<br>  border-width: 1px;<br>  border-color: green;</p>
+<p>  border-right-style: solid;<br>  border-right-width: 1px;<br>  border-right-color: red;</p>
+<h3 id="小程序button"><a href="#小程序button" class="headerlink" title="小程序button"></a>小程序button</h3><p>  button设置点击事件<br>  bindtap=”function”<br>  bind:click=”function”无效</p>
+<h3 id="小程序页面跳转"><a href="#小程序页面跳转" class="headerlink" title="小程序页面跳转"></a>小程序页面跳转</h3><p>  wx.navigateTo({<br>    url: ‘page/home/home?user_id=111’　　// 页面 A<br>  })</p>
+<h3 id="小程序圆角"><a href="#小程序圆角" class="headerlink" title="小程序圆角"></a>小程序圆角</h3><p>  border-redius: 0;</p>
+<h3 id="小程序图片固定宽，高度自适应"><a href="#小程序图片固定宽，高度自适应" class="headerlink" title="小程序图片固定宽，高度自适应"></a>小程序图片固定宽，高度自适应</h3><p>  \<image>标签里面 mode属性设置widthFix</image></p>
+<h3 id="小程序设置点击时间传值"><a href="#小程序设置点击时间传值" class="headerlink" title="小程序设置点击时间传值"></a>小程序设置点击时间传值</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\<span class="tag">&lt;<span class="name">van-button</span> <span class="attr">size</span>=<span class="string">"small"</span> <span class="attr">bindtap</span>=<span class="string">"goToEdit"</span>  <span class="attr">data-id</span>=<span class="string">"&#123;&#123;index&#125;&#125;"</span> <span class="attr">style</span>=<span class="string">"margin-right: 15rpx;"</span>&gt;</span>编辑<span class="tag">&lt;/<span class="name">van-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">javascript</span>&gt;</span></span><br><span class="line">goToEdit: function (e) &#123; // e 中会有data参数</span><br><span class="line">  console.log(e)</span><br><span class="line">  wx.navigateTo(&#123;</span><br><span class="line">    url: '../editClass/editClass'</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;,</span><br><span class="line"><span class="tag">&lt;/<span class="name">javascript</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/2019/03/25/algorithm01/">
-        <h1 class="post-title archive">
-            算法(牛客)
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2019-03-25
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
             
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-        <li class="previous"><a href="/archives/">&larr;  Newer Posts</a></li>
-    
-    
-</ul>
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr>
